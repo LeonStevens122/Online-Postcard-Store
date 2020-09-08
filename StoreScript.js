@@ -189,7 +189,6 @@ function loadCart(delAmount = 0) {
         trashList.append(trashIcon);
         let discountAmount = 0;
 
-
         // create cartItems Array from Session Storage 
         let arrCartItems = JSON.parse(sessionStorage.getItem("cartItems"));
 
