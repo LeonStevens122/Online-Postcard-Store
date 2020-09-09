@@ -44,20 +44,7 @@ h2 {
     border-radius: 50%;
 }
 
-/*CSS Styling that changes the images to round */
-.img-round {
-    object-position: center;
-    height: 225px;
-    width: 95%;
-    padding: 5px;
-    margin: 10px;
-    border-style: solid;
-    border-color: orangered;
-    z-index: -1;
-    border-radius: 50%;
 
-    filter: grayscale(100%);
-}
 
 
 /*CSS Styling for the Main header*/
@@ -66,7 +53,7 @@ h2 {
     color: white;
 }
 
-/*CSS styling for the selected image in the Priduct Page*/
+/*CSS styling for the selected image in the Product Page*/
 .SelectedImage {
     width: 95%;
     padding: 20px;
@@ -232,12 +219,14 @@ dd {
     padding: 10px;
     border: 1px solid blue;
     border-bottom: 0;
-
-    &:last-of-type {
-        border-bottom: 1px solid blue;
-    }
-
 }
+
+.accordion dt,
+dd:last-of-type {
+    border-bottom: 1px solid blue;
+}
+
+
 
 /*styling for link elements in the acordion section*/
 .accordion a {
@@ -321,7 +310,7 @@ set styling for Catalogue images*/
     z-index: -1;
     border-radius: 50%;
 
-    filter: grayscale(100%);
+    /*filter: grayscale(100%); */
 }
 
 /*Sets the CSS Styling of all the input elements */
@@ -369,10 +358,26 @@ input[type=submit] {
     display: inline;
 }
 
+/* Simple Class to center align text*/
+.text-center {
+    text-align: center;
+    padding-left: 40px;
+
+}
+
+/* This Class Centers items on the age */
+.center {
+
+    /*border: 3px solid green;*/
+    text-align: center;
+}
+
 /*css styling for the social media icons*/
 .icon-div {
     color: white;
     display: inline;
+    justify-content: center;
+    align-content: center;
 }
 
 /*css styling for the submit button on the form*/
